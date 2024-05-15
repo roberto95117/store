@@ -1,0 +1,12 @@
+<p>
+  <input type="number" [value]="duration()" (change)="changeDuration($event)" />
+</p>
+<p>
+  <input type="text" [value]="mesage()" (change)="changeMessage($event)" />
+</p>
+<p></p>
+
+@if (duration() > 10) {
+  <app-counter [duration]="duration()" [message]="mesage()"/>
+}
+
